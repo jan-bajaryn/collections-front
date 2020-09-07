@@ -6,6 +6,8 @@ import AdditionalPage from "./pages/AdditionalPage";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import IndexPage from "./pages/IndexPage";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 
 const app = document.getElementById('root');
@@ -17,7 +19,10 @@ ReactDOM.render(
                 <IndexPage/>
             </Route>
             <Route path="/login">
-                <AdditionalPage/>
+                <Login/>
+            </Route>
+            <Route path="/sign-up">
+                <SignUp/>
             </Route>
             <br/><br/><br/><br/><br/><br/><br/><br/>
             <Footer/>
