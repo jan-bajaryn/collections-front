@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/Download/vk-java-sdk-master/vk-java-sdk-master" value="PREVIEW" />
+        <entry key="D:/Programming/GeneratedProjectsSpring/Gradle/gradle-demo/bb-bms" value="PREVIEW" />
+        <entry key="D:/Programming/GeneratedProjectsSpring/gradle-demo/gradle-demo" value="PREVIEW" />
+        <entry key="D:/Programming/SpringFrameworkTimbuchalka/Source-code-New-Spring-5-Gradle-Multi-Module-Project-Setup-Configure-Sub-Modules/bb-bms" value="PREVIEW" />
+        <entry key="D:/Programming/SpringFrameworkTimbuchalka/gradle-demo/gradle-demo" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+</project>
