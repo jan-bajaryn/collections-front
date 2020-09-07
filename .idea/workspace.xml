@@ -1,22 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AdditionalPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/IndexPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
-        <entry key="D:/Download/vk-java-sdk-master/vk-java-sdk-master" value="PREVIEW" />
-        <entry key="D:/Programming/GeneratedProjectsSpring/Gradle/gradle-demo/bb-bms" value="PREVIEW" />
-        <entry key="D:/Programming/GeneratedProjectsSpring/gradle-demo/gradle-demo" value="PREVIEW" />
-        <entry key="D:/Programming/SpringFrameworkTimbuchalka/Source-code-New-Spring-5-Gradle-Multi-Module-Project-Setup-Configure-Sub-Modules/bb-bms" value="PREVIEW" />
-        <entry key="D:/Programming/SpringFrameworkTimbuchalka/gradle-demo/gradle-demo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../../Download/vk-java-sdk-master/vk-java-sdk-master" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../GeneratedProjectsSpring/Gradle/gradle-demo/bb-bms" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../GeneratedProjectsSpring/gradle-demo/gradle-demo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../SpringFrameworkTimbuchalka/Source-code-New-Spring-5-Gradle-Multi-Module-Project-Setup-Configure-Sub-Modules/bb-bms" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../../SpringFrameworkTimbuchalka/gradle-demo/gradle-demo" value="PREVIEW" />
       </map>
     </option>
   </component>
+  <component name="ProjectId" id="1hBF5sbCjpxmKnfTITInKcDnw9I" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../collections-front2" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="" />
+      <created>1599476401796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599476401796</updated>
+      <workItem from="1599476403245" duration="39000" />
+      <workItem from="1599477163011" duration="2782000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599477183439">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599477183439" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599477914561">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599477914561" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599476436352">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599476436352" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599478507145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599478507145" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599478507144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599478507144" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599478507144">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599478507144" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599478507145">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599478507145" />
   </component>
 </project>
