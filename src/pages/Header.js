@@ -39,12 +39,13 @@ const Header = () => {
                         Collections
                     </Typography>
                     <Box mx={3}>
-                        <Button color={"inherit"} variant={"outlined"}>
+                        <Button color={"inherit"} variant={"outlined"}
+                                to={"/login"} component={Link}>
                             Log In
                         </Button>
                     </Box>
                         <Button color={"secondary"} variant={"contained"}
-                                to={"/add"} component={Link}>
+                                to={"/sign-up"} component={Link}>
                             Sign Up
                         </Button>
                 </Toolbar>

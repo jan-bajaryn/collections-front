@@ -16,7 +16,7 @@ ReactDOM.render(
             <Route exact path="/">
                 <IndexPage/>
             </Route>
-            <Route path="/add">
+            <Route path="/login">
                 <AdditionalPage/>
             </Route>
             <br/><br/><br/><br/><br/><br/><br/><br/>
