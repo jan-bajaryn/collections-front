@@ -43,11 +43,10 @@ const Header = () => {
                             Log In
                         </Button>
                     </Box>
-                    <Button color={"secondary"} variant={"contained"}>
-                        Sign Up
-                    </Button>
-                    {/*<MyTag/>*/}
-                    <Link to={"/add"}>Hahaha</Link>
+                        <Button color={"secondary"} variant={"contained"}
+                                to={"/add"} component={Link}>
+                            Sign Up
+                        </Button>
                 </Toolbar>
             </Container>
         </AppBar>

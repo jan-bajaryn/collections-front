@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 );
 
 function Footer() {
-    const classes = makeStyles();
+    const classes = useStyles();
 
     const [value, setValue] = React.useState("recent");
 
