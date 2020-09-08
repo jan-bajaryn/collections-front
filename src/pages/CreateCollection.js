@@ -3,14 +3,14 @@ import {DropzoneArea} from "material-ui-dropzone";
 
 class CreateCollection extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             files: []
         };
     }
 
-    handleChange(files){
+    handleChange(files) {
         this.setState({
             files: files
         });
@@ -113,7 +113,6 @@ class CreateCollection extends Component {
                             onChange={this.handleChange.bind(this)}
                         />
                     </div>
-
 
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>

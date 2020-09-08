@@ -69,10 +69,6 @@ function Footer() {
             <Typography align={"center"} color={"textSecondary"}
                         component={"p"} variant={"subtitle1"}>
                 Some text bottom
-                <Button color={"secondary"} variant={"contained"}
-                        to={"/all-collections"} component={Link} className={"ml-3"}>
-                    All collections
-                </Button>
             </Typography>
         </footer>
     );

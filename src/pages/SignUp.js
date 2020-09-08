@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import {Link} from "react-router-dom";
 
 export default class SignUp extends React.Component {
