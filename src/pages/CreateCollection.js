@@ -27,86 +27,86 @@ class CreateCollection extends Component {
                     </div>
                     <div className="form-group">
                         <label htmlFor="description">Description:</label>
-                        <textarea className="form-control" rows="5" id="description"/>
+                        <textarea className="form-control" rows="5" id="description" name={"description"}/>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="int1">Enter Name for integer column 1:</label>
                         <input type="text" className="form-control" id="int1" placeholder="Integer 1 value"
-                               name="name"/>
+                               name="int1"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="int2">Enter Name for integer column 2:</label>
                         <input type="text" className="form-control" id="int2" placeholder="Integer 2 value"
-                               name="name"/>
+                               name="int2"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="int3">Enter Name for integer column 3:</label>
                         <input type="text" className="form-control" id="int3" placeholder="Integer 3 value"
-                               name="name"/>
+                               name="int3"/>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="string1">Enter Name for string column 1:</label>
                         <input type="text" className="form-control" id="string1" placeholder="string 1 value"
-                               name="name"/>
+                               name="string1"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="string2">Enter Name for string column 2:</label>
                         <input type="text" className="form-control" id="string2" placeholder="string 2 value"
-                               name="name"/>
+                               name="string2"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="string3">Enter Name for string column 3:</label>
                         <input type="text" className="form-control" id="string3" placeholder="string 3 value"
-                               name="name"/>
+                               name="string3"/>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="bool1">Enter Name for bool column 1:</label>
                         <input type="text" className="form-control" id="bool1" placeholder="bool 1 value"
-                               name="name"/>
+                               name="bool1"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="bool2">Enter Name for bool column 2:</label>
                         <input type="text" className="form-control" id="bool2" placeholder="bool 2 value"
-                               name="name"/>
+                               name="bool2"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="bool3">Enter Name for bool column 3:</label>
                         <input type="text" className="form-control" id="bool3" placeholder="bool 3 value"
-                               name="name"/>
+                               name="bool3"/>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="text1">Enter Name for text column 1:</label>
                         <input type="text" className="form-control" id="text1" placeholder="text 1 value"
-                               name="name"/>
+                               name="text1"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="text2">Enter Name for text column 2:</label>
                         <input type="text" className="form-control" id="text2" placeholder="text 2 value"
-                               name="name"/>
+                               name="text2"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="text3">Enter Name for text column 3:</label>
                         <input type="text" className="form-control" id="text3" placeholder="text 3 value"
-                               name="name"/>
+                               name="text3"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="date1">Enter Name for date column 1:</label>
                         <input type="text" className="form-control" id="date1" placeholder="date 1 value"
-                               name="name"/>
+                               name="date1"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="date2">Enter Name for date column 2:</label>
                         <input type="text" className="form-control" id="date2" placeholder="date 2 value"
-                               name="name"/>
+                               name="date2"/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="date3">Enter Name for date column 3:</label>
                         <input type="text" className="form-control" id="date3" placeholder="date 3 value"
-                               name="name"/>
+                               name="date3"/>
                     </div>
                     <div className={"my-5"}>
                         <DropzoneArea

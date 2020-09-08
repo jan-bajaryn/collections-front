@@ -1,43 +1,87 @@
 import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import {Link} from "react-router-dom";
+import * as axios from "axios";
+
+import {useHistory} from "react-router-dom";
+import {If} from "babel-plugin-jsx-control-statements";
 
 export default class SignUp extends React.Component {
 
     constructor(props) {
         super(props);
 
-        this.state = {fstPass: "", secPass: "", allowSend: false};
+        this.state = {
+            fstPass: "",
+            secPass: "",
+            email: "",
+            name: "",
+            allowSend: false,
+            error: false
+        };
 
         this.handleChangeFstPass = this.handleChangeFstPass.bind(this);
         this.handleChangeSecPass = this.handleChangeSecPass.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+
     handleChangeFstPass(event) {
         this.setState({fstPass: event.target.value});
         if (this.state.fstPass !== this.state.secPass) {
             this.setState({allowSend: false})
-        }else {
+        } else {
             this.setState({allowSend: true})
-
         }
+    }
+
+    validateForm() {
+        return this.state.name !== "" &&
+            this.state.email !== "" &&
+            this.state.fstPass !== "" &&
+            this.state.secPass !== "" &&
+            this.state.fstPass === this.state.secPass;
     }
 
     handleChangeSecPass(event) {
         this.setState({secPass: event.target.value});
         if (this.state.fstPass !== this.state.secPass) {
             this.setState({allowSend: false})
-        }else {
+        } else {
             this.setState({allowSend: true})
         }
     }
 
     handleSubmit(event) {
-        if (this.state.fstPass !== this.state.secPass) {
-            alert("You can't send different passwords");
+        if (this.validateForm()) {
+            this.sendData(event);
+        } else {
+            this.setState({error: true})
+            event.preventDefault();
         }
-        event.stopPropagation();
+    }
+
+    sendData(event) {
+        const data = {
+            email: this.state.email,
+            password: this.state.fstPass,
+            name: this.state.name,
+        }
+
+        axios
+            .post("http://localhost:8080/sign-up", data)
+            .then(data => {
+                if (data.error) {
+                    this.setState({error: true})
+                    event.preventDefault();
+                } else {
+                    useHistory().push("/all-collections");
+                }
+            })
+            .catch(error => {
+                this.setState({error: true})
+                event.preventDefault();
+            });
     }
 
     render() {
@@ -46,6 +90,10 @@ export default class SignUp extends React.Component {
                 <div className="row h-100 justify-content-center align-items-center">
                     <form onSubmit={this.handleSubmit}>
                         <h3>Sign Up</h3>
+
+                        {/*<If condition={true}>*/}
+                        {/*    <span>Truth</span>*/}
+                        {/*</If>;*/}
 
                         <div className="form-group">
                             <label>Email address</label>
