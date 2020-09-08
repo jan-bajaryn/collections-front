@@ -4,6 +4,10 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import {Typography} from "@material-ui/core";
 import {Favorite, Folder, LocationOn, Restore} from "@material-ui/icons";
 import {makeStyles} from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import {Link} from "react-router-dom";
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -62,8 +66,13 @@ function Footer() {
                     icon={<Folder/>}
                 />
             </BottomNavigation>
-            <Typography align={"center"} color={"textSecondary"} component={"p"} variant={"subtitle1"}>
+            <Typography align={"center"} color={"textSecondary"}
+                        component={"p"} variant={"subtitle1"}>
                 Some text bottom
+                <Button color={"secondary"} variant={"contained"}
+                        to={"/all-collections"} component={Link} className={"ml-3"}>
+                    All collections
+                </Button>
             </Typography>
         </footer>
     );

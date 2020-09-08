@@ -44,10 +44,10 @@ const Header = () => {
                             Log In
                         </Button>
                     </Box>
-                        <Button color={"secondary"} variant={"contained"}
-                                to={"/sign-up"} component={Link}>
-                            Sign Up
-                        </Button>
+                    <Button color={"secondary"} variant={"contained"}
+                            to={"/sign-up"} component={Link}>
+                        Sign Up
+                    </Button>
                 </Toolbar>
             </Container>
         </AppBar>
