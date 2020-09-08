@@ -15,7 +15,6 @@ class Collections extends Component {
             items: []
 
         }
-
     }
 
     componentDidMount() {
@@ -39,12 +38,20 @@ class Collections extends Component {
                             <div className="card-body">
                                 <h5 className="card-title">{item.name}</h5>
                                 <p className="card-text">{item.description}</p>
-                                <Button component={Link} to={"/item/" + item.id} className="btn btn-primary">Go
-                                    somewhere</Button>
+                                <Button component={Link} to={"/item/" + item.id}>
+                                    See
+                                </Button>
                             </div>
                         </div>
                     ))}
                 </div>
+                <Typography component={"div"} className={"mx-5 px-5"}>
+                    <Link to={"/collection/create"} className={"text-white dec-none"}>
+                        <button className={"btn btn-primary btn-block"}>
+                            Create new
+                        </button>
+                    </Link>
+                </Typography>
             </div>
         );
     }

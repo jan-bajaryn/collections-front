@@ -35,7 +35,7 @@ const Header = () => {
                         <MenuIcon/>
                     </IconButton>
                     <Typography variant={"h6"}
-                                className={classes.title}>
+                                className={classes.title + " text-white dec-none"} component={Link} to={"/all-collections"}>
                         Collections
                     </Typography>
                     <Box mx={3}>

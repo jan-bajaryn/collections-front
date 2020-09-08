@@ -33,7 +33,7 @@ function Footer() {
     };
 
     return (
-        <footer>
+        <footer className={"mt-auto pt-5"}>
             <Typography variant={"h6"} align={"center"} gutterBottom>
                 Footer
             </Typography>

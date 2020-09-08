@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route} from "react-router-dom";
+import Header from "./pages/Header";
+import IndexPage from "./pages/IndexPage";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Collections from "./pages/Collections";
+import Footer from "./pages/Footer";
+import CreateCollection from "./pages/CreateCollection";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className={"d-flex flex-column min-vh-100"}>
+                <Header/>
+                <Route exact path="/">
+                    <IndexPage/>
+                </Route>
+                <Route path="/login">
+                    <Login/>
+                </Route>
+                <Route path="/sign-up">
+                    <SignUp/>
+                </Route>
+                <Route path={"/all-collections"}>
+                    <Collections/>
+                </Route>
+                <Route path={"/collection/create"}>
+                    <CreateCollection/>
+                </Route>
+                <Footer/>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
