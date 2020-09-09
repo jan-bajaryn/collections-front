@@ -1,12 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import {Link} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import * as axios from "axios";
-
-import {Redirect} from "react-router-dom";
-
-import {useHistory} from "react-router-dom";
-import MyRedirect from "../utils/MyRedirect";
 
 export default class SignUp extends React.Component {
 
