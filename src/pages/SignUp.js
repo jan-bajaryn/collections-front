@@ -27,10 +27,6 @@ export default class SignUp extends React.Component {
     myChangeHandler(event) {
         let nam = event.target.name;
         let val = event.target.value;
-
-        console.log("nam = ", nam)
-        console.log("val = ", val)
-
         this.setState({[nam]: val});
     }
 
@@ -83,7 +79,7 @@ export default class SignUp extends React.Component {
                     </form>
                     {
                         this.state.redirect &&
-                        <Redirect to={"/all-collections"}/>
+                        <Redirect to={"/login"}/>
                     }
                 </div>
             </div>
@@ -101,11 +97,6 @@ export default class SignUp extends React.Component {
     }
 
     validateForm() {
-        console.log("name = ", this.state.name)
-        console.log("email = ", this.state.email)
-        console.log("fstPass = ", this.state.fstPass)
-        console.log("secPass = ", this.state.secPass)
-
         return this.state.name !== "" &&
             this.state.email !== "" &&
             this.state.fstPass !== "" &&
@@ -124,29 +115,30 @@ export default class SignUp extends React.Component {
 
     handleSubmit(event) {
         if (this.validateForm()) {
-            this.sendData(event);
+            this.sendData();
         } else {
             this.setState({error: true})
-            console.log(5)
         }
         event.preventDefault();
     }
 
     sendData() {
         const data = {
-            name: this.state.name,
+            username: this.state.name,
             email: this.state.email,
-            password: this.state.fstPass,
-        }
-        console.log("before send", data)
+            password: this.state.fstPass
+        };
+
+        const headers = {"Content-Type": "application/json"};
+
         axios
-            .post("http://localhost:8080/sign-up", data)
+            .post("http://localhost:8080/sign-up", data, headers)
             .then(data => {
-                if (data.error) {
-                    this.setState({error: true})
-                    console.log("2")
+                let result = data.data;
+                if (result) {
+                    this.setState({redirect: true});
                 } else {
-                    this.setState({redirect: true})
+                    this.setState({error: true});
                 }
             })
             .catch(error => {
