@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 import AppBar from "@material-ui/core/AppBar";
 import {makeStyles} from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
-
+import Logout from "../components/Logout";
 
 const useStyles = makeStyles((theme) => ({
         root: {
@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     })
 );
 
-const Header = () => {
+const Header = (props) => {
     const classes = useStyles();
     return (
         <AppBar position='fixed'>
@@ -35,7 +35,8 @@ const Header = () => {
                         <MenuIcon/>
                     </IconButton>
                     <Typography variant={"h6"}
-                                className={classes.title + " text-white dec-none"} component={Link} to={"/all-collections"}>
+                                className={classes.title + " text-white dec-none"} component={Link}
+                                to={"/all-collections"}>
                         Collections
                     </Typography>
                     <Box mx={3}>
@@ -48,6 +49,7 @@ const Header = () => {
                             to={"/sign-up"} component={Link}>
                         Sign Up
                     </Button>
+                    <Logout/>
                 </Toolbar>
             </Container>
         </AppBar>

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interceptors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Logout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +90,8 @@
       <workItem from="1599612526141" duration="5124000" />
       <workItem from="1599651718893" duration="8851000" />
       <workItem from="1599668146174" duration="1845000" />
+      <workItem from="1599684936990" duration="11082000" />
+      <workItem from="1599830053618" duration="387000" />
     </task>
     <servers />
   </component>
@@ -99,30 +106,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599477183439" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599579924207">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599740923840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599579924207" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599740923840" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599550809425">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599550809425" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599661932547">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599767071195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599661932547" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599661932547">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599767071195" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599767071191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599661932547" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599661932547">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599767071191" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599767071187">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599661932547" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599661932547">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599767071187" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599767071192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599661932547" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599767071192" />
     <state x="349" y="147" key="IDE.errors.dialog" timestamp="1599551791254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

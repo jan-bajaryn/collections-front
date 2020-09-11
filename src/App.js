@@ -8,6 +8,9 @@ import SignUp from "./pages/SignUp";
 import Collections from "./pages/Collections";
 import Footer from "./pages/Footer";
 import CreateCollection from "./pages/CreateCollection";
+import MyLogin from "./MyLogin";
+
+import interceptors from "../src/Interceptors";
 
 function App() {
     return (
@@ -29,6 +32,7 @@ function App() {
                 <Route path={"/collection/create"}>
                     <CreateCollection/>
                 </Route>
+                <Route exact path="/mylogin" component={MyLogin} />
                 <Footer/>
             </div>
         </BrowserRouter>
