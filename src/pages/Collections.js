@@ -33,7 +33,7 @@ class Collections extends Component {
 
                 <div className={"m-5 p-5 row"}>
                     {this.state.items.map(item => (
-                        <div className="card w-25 h-10 col-3 mr-1 mb-1">
+                        <div className="card w-25 h-10 col-3 mr-1 mb-1" key={item.id}>
                             <img className="card-img-top" src={item.image} alt={"Card top image"}/>
                             <div className="card-body">
                                 <h5 className="card-title">{item.name}</h5>

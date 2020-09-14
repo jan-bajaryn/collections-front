@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/enums/Role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
-    </list>
+    <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +86,7 @@
       <workItem from="1599830053618" duration="1587000" />
       <workItem from="1599836149389" duration="667000" />
       <workItem from="1599845482046" duration="848000" />
-      <workItem from="1600079723427" duration="2684000" />
+      <workItem from="1600079723427" duration="3515000" />
     </task>
     <servers />
   </component>

@@ -33,10 +33,10 @@ class Login extends React.Component {
 
         axios.post(endpoint, user_object).then(res => {
             localStorage.setItem("authorization", res.data.token);
-            // console.log("Authorities = ", res.data.authorities)
-            // console.log("Authority = ", res.data.authorities[0])
-            // localStorage.setItem("role", res.data.authorities[0])
-            // console.log("Role = ", localStorage.getItem("role"))
+            console.log("Authorities = ", res.data.authorities)
+            console.log("Authority = ", res.data.authorities[0])
+            localStorage.setItem("role", res.data.authorities[0])
+            console.log("Role = ", localStorage.getItem("role"))
             return this.handleDashboard();
         });
     };
