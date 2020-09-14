@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="" />
+    <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ShowCollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Collections.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Collections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CreateCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateCollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +57,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Users\andre\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.6948.73\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -86,7 +94,9 @@
       <workItem from="1599830053618" duration="1587000" />
       <workItem from="1599836149389" duration="667000" />
       <workItem from="1599845482046" duration="848000" />
-      <workItem from="1600079723427" duration="3515000" />
+      <workItem from="1600079723427" duration="4262000" />
+      <workItem from="1600084984689" duration="13633000" />
+      <workItem from="1600115854337" duration="4168000" />
     </task>
     <servers />
   </component>
@@ -109,37 +119,41 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599845667012" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1599767071195">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1600104872603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599767071195" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1599767071191">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600104872603" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1600104872603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599767071191" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1599767071187">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600104872603" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1600104872603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599767071187" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1599767071192">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600104872603" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1600104872603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599767071192" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600104872603" />
     <state x="349" y="147" key="IDE.errors.dialog" timestamp="1599551791254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1599551791254" />
-    <state x="477" y="11" width="581" height="801" key="find.popup" timestamp="1599604671453">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1600116547225">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="11" width="581" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599604671453" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600116547225" />
+    <state x="477" y="11" width="581" height="801" key="find.popup" timestamp="1600117766806">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="11" width="581" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600117766806" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1599580728742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599580728742" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599653721575">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600088229633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599653721575" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600088229633" />
   </component>
 </project>

@@ -22,15 +22,12 @@ class Login extends React.Component {
         event.preventDefault();
 
         const endpoint = "http://localhost:8080/authenticate";
-
         const username = this.username.current.value;
         const password = this.password.current.value;
-
         const user_object = {
             username: username,
             password: password
         };
-
         axios.post(endpoint, user_object).then(res => {
             localStorage.setItem("authorization", res.data.token);
             console.log("Authorities = ", res.data.authorities)
