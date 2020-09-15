@@ -23,6 +23,7 @@ class Collections extends Component {
     componentDidMount() {
         axios.get("http://localhost:8080/all-collections")
             .then(res => {
+                console.log(res.data)
                 this.setState({error: false, isLoaded: true, items: res.data})
             })
     }
