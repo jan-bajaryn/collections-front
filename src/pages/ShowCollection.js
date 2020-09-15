@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Link, withRouter} from "react-router-dom";
 import axios from "axios";
 import {defaultImage} from "./Collections";
+import CreateCollection from "./CreateCollection";
+import CreateItem from "../components/CreateItem";
 
 class ShowCollection extends Component {
 
@@ -23,14 +25,6 @@ class ShowCollection extends Component {
         let items = this.state.collection.rowNames;
         return (
             <div>
-                {/*<ol>*/}
-                {/*    <li>{this.state.collection.id}</li>*/}
-                {/*    <li>{this.state.collection.name}</li>*/}
-                {/*    <li>{this.state.collection.description}</li>*/}
-                {/*    <li>{this.state.collection.image}</li>*/}
-                {/*    /!*<li>{this.state.collection.image}</li>*!/*/}
-                {/*</ol>*/}
-
                 <div className="card mt-5 w-50 container">
                     {this.state.collection.image != null ?
                         <img className="card-img-top" src={this.state.collection.image} alt="Card image cap"/>
@@ -71,11 +65,10 @@ class ShowCollection extends Component {
                         }
                     </ul>
                     <div className="card-body">
-                        <a href="#" className="card-link">Card link</a>
-                        <a href="#" className="card-link">Another link</a>
+                        <button className={"btn text-primary card-link"}>Create new item</button>
                     </div>
                 </div>
-
+                <CreateItem collection_id={this.state.collection.id}/>
             </div>
         );
     }

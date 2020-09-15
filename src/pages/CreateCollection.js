@@ -231,23 +231,28 @@ class CreateCollection extends Component {
     }
 
 
-    addClickbools() {
+    addClickbools(event) {
+        event.preventDefault();
         this.setState(prevState => ({bools: [...prevState.bools, '']}))
     }
 
-    addClickdates() {
+    addClickdates(event) {
+        event.preventDefault();
         this.setState(prevState => ({dates: [...prevState.dates, '']}))
     }
 
-    addClicktexts() {
+    addClicktexts(event) {
+        event.preventDefault();
         this.setState(prevState => ({texts: [...prevState.texts, '']}))
     }
 
-    addClickstrings() {
+    addClickstrings(event) {
+        event.preventDefault();
         this.setState(prevState => ({strings: [...prevState.strings, '']}))
     }
 
-    addClickintegers() {
+    addClickintegers(event) {
+        event.preventDefault();
         this.setState(prevState => ({integers: [...prevState.integers, '']}))
     }
 
