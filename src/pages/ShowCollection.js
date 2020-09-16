@@ -57,8 +57,8 @@ class ShowCollection extends Component {
                                 Available additional columns:
                                 <ul>
                                     {
-                                        items.map(item => (
-                                            <li>
+                                        items.map((item,i) => (
+                                            <li key={i}>
                                                 {item}
                                             </li>
                                         ))

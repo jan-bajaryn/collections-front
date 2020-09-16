@@ -15,8 +15,13 @@ class CreateItem extends React.Component {
         super(props);
 
         this.state = {
+            ready: false,
+            bools: [],
+            integers: [],
+            dates: [],
+            strings: [],
+            texts: [],
             collectionId: props.collectionId,
-            info: null,
             tags: [
                 {id: "Thailand", text: "Thailand"},
                 {id: "India", text: "India"}
@@ -30,6 +35,8 @@ class CreateItem extends React.Component {
                 {id: 'Thailand', text: 'Thailand'}
             ]
         };
+
+        this.name = React.createRef();
         this.handleDelete = this.handleDelete.bind(this);
         this.handleAddition = this.handleAddition.bind(this);
         this.handleDrag = this.handleDrag.bind(this);
@@ -38,7 +45,32 @@ class CreateItem extends React.Component {
     componentDidMount() {
         axios.get("http://localhost:8080/collection/columns/" + this.state.collectionId).then(res => {
             console.log("info res.data = ", res.data)
-            this.setState({info: res.data})
+            this.setState({
+                bools: res.data.boolFieldNames.map(el => {
+                    return {key: el.id, value: false, name: el.name}
+                })
+            })
+            this.setState({
+                dates: res.data.dateFieldNames.map(el => {
+                    return {key: el.id, value: '', name: el.name}
+                })
+            })
+            this.setState({
+                integers: res.data.intFieldNames.map(el => {
+                    return {key: el.id, value: '', name: el.name}
+                })
+            })
+            this.setState({
+                strings: res.data.stringFieldNames.map(el => {
+                    return {key: el.id, value: '', name: el.name}
+                })
+            })
+            this.setState({
+                texts: res.data.textFieldNames.map(el => {
+                    return {key: el.id, value: '', name: el.name}
+                })
+            })
+            this.setState({ready: true})
         });
     }
 
@@ -71,11 +103,11 @@ class CreateItem extends React.Component {
         return (
             <div className={"my-5"}>
                 <h3>Create new item</h3>
-                <form>
+                <form onSubmit={this.handleSubmit.bind(this)}>
 
                     <div className="form-group">
-                        <label>Username</label>
-                        <input type="text" className="form-control" placeholder="Enter email" ref={this.username}/>
+                        <label>Name</label>
+                        <input type="text" className="form-control" placeholder="Name" ref={this.name}/>
                     </div>
 
                     <div className={"my-3 form-group"}>
@@ -89,7 +121,7 @@ class CreateItem extends React.Component {
                             className="form-control"/>
                     </div>
                     {
-                        this.state.info != null &&
+                        this.state.ready &&
                         <div>
                             {this.boolColumns()}
                             {this.integerColumns()}
@@ -100,20 +132,54 @@ class CreateItem extends React.Component {
                     }
 
                     <button type="submit" className="btn btn-primary btn-block"
-                            onSubmit={this.handleSubmit}>Submit
+                            onSubmit={this.handleSubmit.bind(this)}>Submit
                     </button>
                 </form>
             </div>
         )
     }
 
+    toMap(input) {
+        return input.map((el) => {
+            return {nameId: el.key, value: el.value};
+        })
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        let data = {
+            collectionId: this.state.collectionId,
+            name: this.name.current.value,
+            tags: this.state.tags.map((el) => {
+                return el.id
+            }),
+            intFields: this.toMap(this.state.integers),
+            // intFields: new Map([{1: 2}, {2: 3}]),
+            boolFields: this.toMap(this.state.bools),
+            dateFields: this.toMap(this.state.dates),
+            stringFields: this.toMap(this.state.strings),
+            textFields: this.toMap(this.state.texts)
+        };
+        console.log("data = ", data);
+        axios.post("http://localhost:8080/item/create",
+            data
+        ).then(res => {
+            console.log("res.data = ", res.data)
+            if (res.data) {
+                alert("Success");
+                // window.location.reload(false);
+            }
+        });
+    }
+
     boolColumns() {
         return <>
             {
-                this.state.info.boolFieldNames.map(el =>
-                    <div className={"form-group"}>
+                this.state.bools.map((el, i) =>
+                    <div className={"form-group"} key={i}>
                         <label>
-                            <input className={"mx-2"} type="checkbox" name={el.name}/>
+                            <input className={"mx-2"} type="checkbox" name={el.name}
+                                   checked={el.value} onChange={this.boolChange.bind(this, i)}/>
                             : {el.name}
                         </label>
                     </div>
@@ -122,41 +188,62 @@ class CreateItem extends React.Component {
         </>;
     }
 
+    boolChange(i, event) {
+        let values = [...this.state.bools];
+        values[i].value = event.target.checked;
+        this.setState({bools: values});
+    }
+
     integerColumns() {
         return <>
             {
-                this.state.info.intFieldNames.map(el =>
-                    <div className={"form-group"}>
+                this.state.integers.map((el, i) =>
+                    <div className={"form-group"} key={i}>
                         <label>{el.name} :
-                            <input className="form-control" placeholder="Enter number" type="number" name={el.name}/>
+                            <input className="form-control" placeholder="Enter number" type="number" name={el.name}
+                                   value={el.value} onChange={this.integersChange.bind(this, i)}/>
                         </label>
                     </div>
                 )
             }
         </>;
+    }
+
+    integersChange(i, event) {
+        let values = [...this.state.integers];
+        values[i].value = event.target.value;
+        this.setState({integers: values});
     }
 
     dateColumns() {
         return <>
             {
-                this.state.info.dateFieldNames.map(el =>
-                    <div className={"form-group"}>
+                this.state.dates.map((el, i) =>
+                    <div className={"form-group"} key={i}>
                         <label>{el.name} :
-                            <input className="form-control" placeholder="Enter date" type={"datetime-local"} name={el.name}/>
+                            <input className="form-control" placeholder="Enter date" type={"datetime-local"}
+                                   name={el.name} value={el.value} onChange={this.datesChange.bind(this, i)}/>
                         </label>
                     </div>
                 )
             }
         </>;
+    }
+
+    datesChange(i, event) {
+        let values = [...this.state.dates];
+        values[i].value = event.target.value;
+        this.setState({dates: values});
     }
 
     stringColumns() {
         return <>
             {
-                this.state.info.stringFieldNames.map(el =>
-                    <div className={"form-group"}>
+                this.state.strings.map((el, i) =>
+                    <div className={"form-group"} key={i}>
                         <label>{el.name} :
-                            <input className="form-control" placeholder="Enter text" type="text" name={el.name}/>
+                            <input className="form-control" placeholder="Enter text" type="text" name={el.name}
+                                   value={el.value} onChange={this.stringsChange.bind(this, i)}/>
                         </label>
                     </div>
                 )
@@ -164,19 +251,33 @@ class CreateItem extends React.Component {
         </>;
     }
 
+    stringsChange(i, event) {
+        let values = [...this.state.strings];
+        values[i].value = event.target.value;
+        this.setState({strings: values});
+    }
+
     textColumns() {
         return <>
             {
-                this.state.info.textFieldNames.map(el =>
-                    <div className={"form-group"}>
+                this.state.texts.map((el, i) =>
+                    <div className={"form-group"} key={i}>
                         <label>{el.name} :
-                            <textarea placeholder="Enter text" className="form-control" rows="5" name={el.name}/>
+                            <textarea placeholder="Enter text" className="form-control" rows="5" name={el.name}
+                                      value={el.value} onChange={this.textChange.bind(this, i)}/>
                         </label>
                     </div>
                 )
             }
         </>;
     }
+
+    textChange(i, event) {
+        let values = [...this.state.texts];
+        values[i].value = event.target.value;
+        this.setState({texts: values});
+    }
+
 }
 
 export default CreateItem;
