@@ -72,19 +72,10 @@ class Login extends React.Component {
                                    ref={this.password}/>
                         </div>
 
-                        <div className="form-group">
-                            <div className="custom-control custom-checkbox">
-                                <input type="checkbox" className="custom-control-input" id="customCheck1"/>
-                                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                            </div>
-                        </div>
 
                         <button type="submit" className="btn btn-primary btn-block"
                                 onSubmit={this.handleSubmit}>Submit
                         </button>
-                        <p className="forgot-password text-right mt-1">
-                            <Link to={"/sign-up"}>Forgot password?</Link>
-                        </p>
                     </form>
                 </div>
             </div>

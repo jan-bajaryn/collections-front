@@ -3,6 +3,7 @@ import {Link, withRouter} from "react-router-dom";
 import axios from "axios";
 import {defaultImage} from "./Collections";
 import CreateItem from "../components/CreateItem";
+import AllItems from "./AllItems";
 
 class ShowCollection extends Component {
 
@@ -11,8 +12,10 @@ class ShowCollection extends Component {
         this.state = {
             collection: {},
             modalDisplay: false,
+            modalItems: false
         }
         this.toggleModal = this.toggleModal.bind(this);
+        this.toggleItems = this.toggleItems.bind(this);
     }
 
     componentDidMount() {
@@ -68,10 +71,18 @@ class ShowCollection extends Component {
                         }
                     </ul>
                     <div className="card-body">
-                        <button onClick={this.toggleModal} className={"btn text-primary card-link"}>Create new item
-                        </button>
+                        <button onClick={this.toggleModal} className={"btn text-primary card-link"}>Create new item</button>
+                        <button onClick={this.toggleItems} className={"btn text-primary card-link"}>Show items</button>
                     </div>
                 </div>
+
+                {
+                    this.state.modalItems &&
+                    <div className={"container w-50"}>
+                        <AllItems collectionId={this.props.match.params.id}/>
+                    </div>
+                }
+
                 <div className={"container w-50"}>
                     {
                         this.state.modalDisplay &&
@@ -85,6 +96,10 @@ class ShowCollection extends Component {
     toggleModal(event) {
         event.preventDefault();
         this.setState(prevState => ({modalDisplay: !prevState.modalDisplay}))
+    }
+    toggleItems(event){
+        event.preventDefault();
+        this.setState(prevState => ({modalItems: !prevState.modalItems}))
     }
 }
 
