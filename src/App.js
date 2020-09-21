@@ -12,6 +12,7 @@ import MyLogin from "./MyLogin";
 
 import interceptors from "../src/Interceptors";
 import ShowCollection from "./pages/ShowCollection";
+import Item from "./pages/Item";
 
 function App() {
     return (
@@ -35,6 +36,9 @@ function App() {
                 </Route>
                 <Route path={"/collection/:id(\\d+)"}>
                     <ShowCollection/>
+                </Route>
+                <Route path={"/item/:id(\\d+)"}>
+                    <Item/>
                 </Route>
                 <Route exact path="/mylogin" component={MyLogin} />
                 <Footer/>

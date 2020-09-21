@@ -35,7 +35,7 @@ class AllItems extends Component {
                                         <div className="card w-10">
                                             <div className="card-body">
                                                 <h5 className="card-title">
-                                                    <Link to={"/items/" + value.id}>
+                                                    <Link to={"/item/" + value.id}>
                                                         {value.name}
                                                     </Link>
                                                 </h5>

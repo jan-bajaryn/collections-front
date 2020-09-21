@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="434ddb78-bd9a-4f8b-9764-40bff10a2f72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/AllItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Like.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ShowCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ShowCollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AllItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AllItems.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +61,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\itransition\final-project\front-end3\collections-front\src\pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming\itransition\final-project\front-end3\collections-front\src\css" />
     </key>
@@ -100,6 +106,7 @@
       <workItem from="1600115854337" duration="30925000" />
       <workItem from="1600209954404" duration="9380000" />
       <workItem from="1600697455393" duration="6352000" />
+      <workItem from="1600724610266" duration="5487000" />
     </task>
     <servers />
   </component>
@@ -146,17 +153,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600116547225" />
-    <state x="477" y="11" width="581" height="801" key="find.popup" timestamp="1600190768655">
+    <state x="379" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600727011294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="11" width="581" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600190768655" />
+    <state x="379" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1600727011294" />
+    <state x="477" y="11" width="581" height="801" key="find.popup" timestamp="1600729638657">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="11" width="581" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600729638657" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1599580728742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599580728742" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600708676907">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1600730053953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600708676907" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600730053953" />
   </component>
 </project>
